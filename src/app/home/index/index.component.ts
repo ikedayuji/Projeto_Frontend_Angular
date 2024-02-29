@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class IndexComponent {
 
+  nome: string = '';
+
   constructor(private router: Router) {
   }
 
