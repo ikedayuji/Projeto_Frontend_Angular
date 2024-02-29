@@ -1,0 +1,31 @@
+<mat-drawer-container autosize>
+  <mat-drawer #drawer mode="side" class="p-5">
+    <ng-template #botaoSairMenu>
+      <button mat-raised-button color="primary">
+        Sair
+      </button>
+    </ng-template>
+    <button mat-raised-button>
+      Meu menu
+    </button>
+  </mat-drawer>
+
+  <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="w-full p-5 h-full">
+    <ng-content></ng-content>
+  </div>
+</mat-drawer-container>
+  
