@@ -1,4 +1,14 @@
-<mat-slider min="-100" max="100" step="1">
-    <input matSliderThumb [(value)]="valor">
-
+<div class="flex justify-center">
+<mat-slider class="w-full" min="-100" max="100" step="1"
+    discrete [displayWith]="mostrarValor">
+    <input matSliderThumb [(value)]="valor" (change)="converter()" />
 </mat-slider>
+</div>
+
+<div class="flex justify-center space-x-2">
+<app-graus-celsius [titulo]="'Graus Celsius'" [temperatura]="valor">
+</app-graus-celsius>
+
+<app-graus-celsius [titulo]="'Graus Farenheit'" [temperatura]="novoValor">
+</app-graus-celsius>
+</div>

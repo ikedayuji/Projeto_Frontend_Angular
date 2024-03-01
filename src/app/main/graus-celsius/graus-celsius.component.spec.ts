@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CalculatorComponent } from './calculator.component';
+import { GrausCelsiusComponent } from './graus-celsius.component';
 
-describe('CalculatorComponent', () => {
-  let component: CalculatorComponent;
-  let fixture: ComponentFixture<CalculatorComponent>;
+describe('GrausCelsiusComponent', () => {
+  let component: GrausCelsiusComponent;
+  let fixture: ComponentFixture<GrausCelsiusComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CalculatorComponent]
+      imports: [GrausCelsiusComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CalculatorComponent);
+    fixture = TestBed.createComponent(GrausCelsiusComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

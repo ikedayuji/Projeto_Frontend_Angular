@@ -1,9 +1,12 @@
-    <h1>Home</h1>
+<h1>Minha página em Angular</h1>
 
-    <mat-form-field>
-        <mat-label>Qual seu nome?</mat-label>
-        <input matInput [(ngModel)]="nome" />
+<mat-form-field>
+    <mat-label>Qual seu nome?</mat-label>
+    <input matInput [(ngModel)]="nome" />
+</mat-form-field>
 
-  <mat-form-field/>
+<h2 *ngIf="nome.length>0" class="text-blue-500">
     Olá {{nome}}, boa noite!
-    <button mat-flat-button   n color="primary" (click)="goToPage()">Próxima Página</button>
+</h2>
+
+<button mat-flat-button color="primary" (click)="goToPage()">Prosseguir</button>
