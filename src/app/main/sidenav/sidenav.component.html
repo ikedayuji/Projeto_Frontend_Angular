@@ -1,13 +1,18 @@
 <mat-drawer-container autosize>
   <mat-drawer #drawer mode="side" class="p-5">
     <ng-template #botaoSairMenu>
-      <button mat-raised-button color="primary">
+      <button mat-raised-button color="primary" class="mat-button">
         Sair
       </button>
     </ng-template>
-    <button mat-raised-button>
+    <button mat-raised-button class="mat-button">
       Meu menu
     </button>
+    <div class="mt-4">
+      <button mat-raised-button routerLink="/cadastro-contatos" class="mat-button">
+        Cadastro de Contatos
+      </button>
+    </div>
   </mat-drawer>
 
   <mat-toolbar color="primary">
@@ -28,4 +33,3 @@
     <ng-content></ng-content>
   </div>
 </mat-drawer-container>
-  

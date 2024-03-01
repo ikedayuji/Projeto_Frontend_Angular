@@ -1,0 +1,18 @@
+<p>cadastro-contatos</p>
+
+<form [formGroup]="formularioContato" (ngSubmit)="adicionarContato()">
+    <mat-form-field>
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="nome" placeholder="Nome do contato">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Telefone</mat-label>
+      <input matInput formControlName="telefone" placeholder="Telefone do contato">
+    </mat-form-field>
+    <button mat-flat-button color="primary" type="submit">Adicionar Contato</button>
+  </form>
+  
+  <ul>
+    <li *ngFor="let contato of contatos">{{ contato.nome }} - {{ contato.telefone }}</li>
+  </ul>
+  
